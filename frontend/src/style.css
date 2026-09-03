@@ -1,0 +1,109 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.4;
+  color: #f4f7ff;
+  background: #090e1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: radial-gradient(circle at top, #1c2d54 0%, #090e1a 55%, #05070d 100%);
+}
+
+#app {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.app-shell {
+  width: min(960px, 100%);
+  border: 1px solid rgba(112, 145, 216, 0.4);
+  border-radius: 18px;
+  background: rgba(6, 15, 34, 0.82);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid rgba(112, 145, 216, 0.35);
+}
+
+.app-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.city-label {
+  font-size: 0.85rem;
+  color: #b8c5eb;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, rgba(28, 62, 148, 0.5), rgba(114, 12, 72, 0.45));
+  border: 1px solid rgba(166, 188, 243, 0.35);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.hero-kicker {
+  margin: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d4deff;
+}
+
+.hero-card h1 {
+  margin: 0.3rem 0;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.hero-copy {
+  margin: 0;
+  color: #d7e3ff;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.panel {
+  border: 1px solid rgba(112, 145, 216, 0.35);
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: rgba(12, 23, 48, 0.78);
+}
+
+.panel h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.panel p {
+  margin: 0;
+  color: #c3d2fb;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
