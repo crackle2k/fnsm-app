@@ -107,3 +107,99 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.report-form {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.report-form input,
+.report-form textarea,
+.report-form select {
+  font: inherit;
+  color: #f4f7ff;
+  background: rgba(6, 15, 34, 0.7);
+  border: 1px solid rgba(112, 145, 216, 0.45);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  resize: vertical;
+}
+
+.report-form select option {
+  color: #0a0f1e;
+}
+
+.report-form button {
+  font: inherit;
+  font-weight: 600;
+  color: #f4f7ff;
+  background: linear-gradient(135deg, #c0175d, #720c48);
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+
+.report-form button:hover {
+  filter: brightness(1.1);
+}
+
+.form-status {
+  margin: 0;
+  min-height: 1.2em;
+  font-size: 0.8rem;
+  color: #b8c5eb;
+}
+
+.crime-list,
+.district-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.crime-empty {
+  color: #8fa0cf;
+  font-size: 0.85rem;
+}
+
+.crime-item {
+  border: 1px solid rgba(112, 145, 216, 0.3);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  background: rgba(6, 15, 34, 0.55);
+}
+
+.crime-item-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #d4a5c4;
+  margin-bottom: 0.2rem;
+}
+
+.crime-title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.crime-meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.78rem;
+  color: #8fa0cf;
+}
+
+.district-item {
+  font-size: 0.85rem;
+  color: #c3d2fb;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid rgba(112, 145, 216, 0.15);
+}
